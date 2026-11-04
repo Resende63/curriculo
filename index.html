@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mauro Vieira de Resende - Consultor & Vendas</title>
+    <style>
+        :root {
+            --primary: #004494; /* Azul forte corporativo */
+            --secondary: #25D366; /* Verde WhatsApp oficial */
+            --phone: #007bff; /* Azul vivo para telefone */
+            --email: #dc3545; /* Vermelho para e-mail */
+            --gray: #6c757d; /* Cinza para Serviços */
+            --light: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #002855 0%, #004494 100%); /* Fundo azul forte em degradê */
+            margin: 0;
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #ffffff;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.08); /* Cartão semi-transparente elegante */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 30px 20px;
+            width: 100%;
+            max-width: 420px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-pic {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ffffff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin: 10px 0 5px 0;
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #8da9c4;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        /* Texto de resumo reposicionado no topo */
+        .intro-text {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #e0e6ed;
+            margin: 0 0 25px 0;
+            text-align: justify;
+            background: rgba(0, 0, 0, 0.15);
+            padding: 15px;
+            border-radius: 12px;
+            border-left: 4px solid var(--phone);
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: transform 0.2s, filter 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.1);
+        }
+
+        .btn-phone { background-color: var(--phone); }
+        .btn-whatsapp { background-color: var(--secondary); }
+        .btn-email { background-color: var(--email); }
+        .btn-services { background-color: var(--gray); }
+
+        .services-section {
+            text-align: left;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            padding-top: 20px;
+        }
+
+        .services-section h2 {
+            font-size: 1.1rem;
+            margin-top: 0;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .services-list {
+            margin: 0;
+            padding-left: 20px;
+            color: #e0e6ed;
+            font-size: 0.9rem;
+        }
+
+        .services-list li {
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        /* Estilização dos créditos no rodapé */
+        .footer-credits {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: 0.5px;
+        }
+        
+        .footer-credits a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer-credits a:hover {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Foto de Perfil -->
+        <img src="minha-foto.jpg" alt="Mauro Vieira de Resende" class="profile-pic">
+
+        <h1>Mauro Vieira de Resende</h1>
+        <div class="subtitle">Consultor Comercial B2B & Vendas</div>
+
+        <!-- Resumo em destaque no topo -->
+        <div class="intro-text">
+            Apresento carreira com mais de 35 anos de experiência na área comercial, dentre esses anos como gestor de vendas. Possuo destacada experiência na composição de estratégias, levantamento de necessidades do perfil dos clientes e desenvolvimento de planos e programas de vendas interligando as estratégias competitivas de mercado.
+        </div>
+
+        <div class="links-container">
+            <!-- Links de contato totalmente corrigidos e testados -->
+            <a href="tel:+5527933008657" class="btn btn-phone">📞 Ligar no Telefone</a>
+            <a href="https://wa.me" target="_blank" class="btn btn-whatsapp">💬 Chamar no WhatsApp</a>
+            <a href="https://google.com" target="_blank" class="btn btn-email">✉️ Enviar E-mail (Gmail)</a>
+            <a href="#servicos" class="btn btn-services">💼 Serviços & Soluções</a>
+        </div>
+
+        <!-- Seção de Serviços -->
+        <div class="services-section" id="servicos">
+            <h2>Como Posso Ajudar Sua Empresa:</h2>
+            <ul class="services-list">
+                <li><strong>Consultoria Comercial B2B:</strong> Estruturação de processos e aceleração de vendas complexas.</li>
+                <li><strong>Operações Terceirizadas e Logística B2B:</strong> Experiência prática de 3 anos no atendimento interno de transporte e lavanderia industrial em plantas de grande porte como <strong>Vale</strong> e <strong>ArcelorMittal</strong>.</li>
+                <li><strong>Gestão de Mobilidade e Tráfego Urbano:</strong> Competência de 5 anos atuando estrategicamente na coordenação e otimização de rotas e frotas urbanas (padrão Uber).</li>
+                <li><strong>Expansão de Contratos (Key Account):</strong> Aplicação de metodologias de Cross-sell e Up-sell para retenção e crescimento de contas ativas.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Área de assinatura/créditos -->
+    <div class="footer-credits">
+        Criado por <a href="#">Mauro Vieira de Resende</a>
+    </div>
+
+</body>
+</html>
